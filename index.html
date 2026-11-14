@@ -16,12 +16,12 @@
   <meta property="og:site_name" content="Rune Player" />
   <meta property="og:url" content="https://rsdt-s.github.io/Rune/" />
   <meta property="og:title" content="Rune — Free Ad-Free Music Player for Android" />
-  <meta property="og:description" content="Hybrid open-source music player: free streaming, local MP3/FLAC files, preset equalizer, synced lyrics, and playlist importer." />
+  <meta property="og:description" content="Hybrid music player: free streaming, local MP3/FLAC files, preset equalizer, synced lyrics, and playlist importer." />
   <meta property="og:image" content="https://rsdt-s.github.io/Rune/media/Rune.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rune — Free Ad-Free Music Player for Android" />
-  <meta name="twitter:description" content="Hybrid open-source music player with Amethyst design, ultra-low battery consumption, and uncompromised audio quality." />
+  <meta name="twitter:description" content="Hybrid music player with Amethyst design, ultra-low battery consumption, and uncompromised audio quality." />
   <meta name="twitter:image" content="https://rsdt-s.github.io/Rune/media/Rune.png" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -67,7 +67,6 @@
 
   <!-- =========================================================
        VIEW 1: SHARED TRACK REDIRECT (?d=...)
-       Automatically shown when the URL contains track data
        ========================================================= -->
   <div id="sharedTrackView" class="hidden min-h-screen flex items-center justify-center p-5">
     <div class="bg-[#1A1A20] border border-[#272730] rounded-[20px] p-7 max-w-[380px] w-full text-center shadow-2xl">
@@ -148,7 +147,7 @@
           </p>
         </div>
 
-        <!-- App Screenshot (media/Rune.png) -->
+        <!-- App Screenshot -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative group">
             <div class="absolute -inset-1 bg-gradient-to-b from-amethyst-primary to-purple-900 rounded-[2.6rem] blur-xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
@@ -167,42 +166,36 @@
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Card 1 -->
           <div class="bg-amethyst-surface border border-amethyst-border rounded-2xl p-6 hover:border-amethyst-primary/50 transition">
             <div class="w-10 h-10 rounded-xl bg-amethyst-primary/15 text-amethyst-light flex items-center justify-center mb-4 font-bold">01</div>
             <h3 class="text-lg font-bold mb-2">Unrestricted Search & Streaming</h3>
             <p class="text-zinc-400 text-sm leading-relaxed">Find any song, album, or artist instantly with no subscriptions, no skip limits, and zero intrusive ads.</p>
           </div>
 
-          <!-- Card 2 -->
           <div class="bg-amethyst-surface border border-amethyst-border rounded-2xl p-6 hover:border-amethyst-primary/50 transition">
             <div class="w-10 h-10 rounded-xl bg-amethyst-primary/15 text-amethyst-light flex items-center justify-center mb-4 font-bold">02</div>
             <h3 class="text-lg font-bold mb-2">Hybrid: Online + Local MP3/FLAC</h3>
             <p class="text-zinc-400 text-sm leading-relaxed">Scan your device storage and seamlessly mix local MP3, FLAC, or WAV files alongside streamed tracks in the same playlists.</p>
           </div>
 
-          <!-- Card 3 -->
           <div class="bg-amethyst-surface border border-amethyst-border rounded-2xl p-6 hover:border-amethyst-primary/50 transition">
             <div class="w-10 h-10 rounded-xl bg-amethyst-primary/15 text-amethyst-light flex items-center justify-center mb-4 font-bold">03</div>
             <h3 class="text-lg font-bold mb-2">Equalizer & Custom Presets</h3>
             <p class="text-zinc-400 text-sm leading-relaxed">Shape your sound with a built-in graphic equalizer, ready-to-use presets (Bass Boost, Rock, Pop, Vocal), and custom profiles.</p>
           </div>
 
-          <!-- Card 4 -->
           <div class="bg-amethyst-surface border border-amethyst-border rounded-2xl p-6 hover:border-amethyst-primary/50 transition">
             <div class="w-10 h-10 rounded-xl bg-amethyst-primary/15 text-amethyst-light flex items-center justify-center mb-4 font-bold">04</div>
             <h3 class="text-lg font-bold mb-2">Playlist Importer</h3>
             <p class="text-zinc-400 text-sm leading-relaxed">Bring your external playlists over by pasting a link and rebuild your entire library in seconds without starting from scratch.</p>
           </div>
 
-          <!-- Card 5 -->
           <div class="bg-amethyst-surface border border-amethyst-border rounded-2xl p-6 hover:border-amethyst-primary/50 transition">
             <div class="w-10 h-10 rounded-xl bg-amethyst-primary/15 text-amethyst-light flex items-center justify-center mb-4 font-bold">05</div>
             <h3 class="text-lg font-bold mb-2">Synced Lyrics & Visualizer</h3>
             <p class="text-zinc-400 text-sm leading-relaxed">Follow real-time karaoke-style lyrics and enjoy audio-reactive animations wrapped in a deep OLED dark theme.</p>
           </div>
 
-          <!-- Card 6 -->
           <div class="bg-amethyst-surface border border-amethyst-border rounded-2xl p-6 hover:border-amethyst-primary/50 transition">
             <div class="w-10 h-10 rounded-xl bg-amethyst-primary/15 text-amethyst-light flex items-center justify-center mb-4 font-bold">06</div>
             <h3 class="text-lg font-bold mb-2">Direct Track Links & JSON Backup</h3>
@@ -239,7 +232,7 @@
     <footer class="border-t border-amethyst-border py-8 text-center text-xs text-zinc-500">
       <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p>Rune Player • Developed by <a href="https://github.com/RSDT-s" target="_blank" rel="noopener" class="text-amethyst-light hover:underline">RSDT-s</a></p>
-        <p>Open-Source Distribution on GitHub</p>
+        <p>Android Distribution via GitHub</p>
       </div>
     </footer>
   </div>
