@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listen on Rune</title>
+  <style>
+    body {
+      margin: 0; font-family: system-ui, sans-serif;
+      background: #0E0E11; color: #F4F4F5;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; padding: 20px; box-sizing: border-box;
+    }
+    .card {
+      background: #1A1A20; border: 1px solid #272730;
+      border-radius: 20px; padding: 28px; max-width: 380px; width: 100%;
+      text-align: center;
+    }
+    .tag { color: #C084FC; font-size: 12px; letter-spacing: 3px; font-weight: 700; }
+    h1 { font-size: 22px; margin: 12px 0 6px; }
+    p { color: #A1A1AA; font-size: 14px; margin: 0 0 22px; }
+    .btn {
+      display: block; width: 100%; padding: 14px; border-radius: 12px;
+      text-decoration: none; font-weight: 700; box-sizing: border-box; margin-bottom: 10px;
+    }
+    .primary { background: #8B5CF6; color: #F4F4F5; }
+    .secondary { border: 1px solid #272730; color: #C084FC; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">RUNE PLAYER</div>
+    <h1 id="title">Shared Track</h1>
+    <p id="artist">Open in Rune to listen free with no ads.</p>
+    <a id="openBtn" class="btn primary" href="rune://track">Open in Rune</a>
+    <a class="btn secondary" href="https://github.com/RSDT-s/Rune/releases/latest">Download Rune APK</a>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const d = params.get("d");
+    if (d) {
+      const deepLink = "rune://track?d=" + encodeURIComponent(d);
+      document.getElementById("openBtn").href = deepLink;
+      try {
+        const base64 = d.replace(/-/g, "+").replace(/_/g, "/");
+        const json = JSON.parse(decodeURIComponent(escape(atob(base64))));
+        if (json.t) document.getElementById("title").textContent = json.t;
+        if (json.a) document.getElementById("artist").textContent = json.a;
+      } catch (e) {}
+      window.location.href = deepLink;
+    }
+  </script>
+</body>
+</html>
