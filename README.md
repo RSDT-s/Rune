@@ -15,7 +15,7 @@
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Amethyst OLED Design:** Pure dark `#0E0E11` aesthetic crafted for OLED screens with smooth transitions and low battery impact.
 - **Hybrid Library & Streaming:**
@@ -40,7 +40,7 @@
 
 ---
 
-## 📲 Installation
+##  Installation
 
 1. Go to the [**Releases**](https://github.com/TU_USUARIO_GITHUB/Rune/releases/latest) page.
 2. Download the latest `app-release.apk`.
@@ -50,7 +50,7 @@
 
 ---
 
-## ☕ Support the Creator
+##  Support the Creator
 
 I created Rune with love — **no ads, no subscriptions, free forever.**  
 However, if you enjoy using it, I'd really appreciate your support!
@@ -59,7 +59,7 @@ However, if you enjoy using it, I'd really appreciate your support!
 
 ---
 
-## ⚖️ Disclaimer & Legal Notice
+##  Disclaimer & Legal Notice
 
 - **No Hosting or Distribution:** Rune does **not** host, store, index, or distribute any audio files or copyrighted media on any developer-owned server.
 - **Client-Side Playback:** Online playback and optional local offline caching are initiated solely by the user through publicly accessible third-party endpoints.
